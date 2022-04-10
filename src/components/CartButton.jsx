@@ -8,10 +8,7 @@ const CartButton = (props) => {
       setCount(count+1)
   };
 const handleDec=()=>{
-  if(count>0){
-    setCount(count-1)
-  }
-  // setCount(count-1)
+  setCount(count-1)
 }
 
     
@@ -19,7 +16,7 @@ const handleDec=()=>{
   {/* add to cart button */}
   {/* count with - and  + button */}
 
-  <div className="btn">
+  <div>
       <button  onClick={handleInc} className="minus-btn">+</button>
       <p className="count-item">{count}</p>
       <button  onClick={handleDec}  className="plusbtn">-</button>
